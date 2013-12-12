@@ -14,29 +14,27 @@
 %GNU General Public License for more details.
 %----------------------------------------
 
-\documentclass[a4paper,10pt,fleqn]{article}
+\section{Arrays}
 
-\usepackage{layout}
+\subsection{Erzeugung}
+\begin{lstlisting}[caption=Array Erzeugung]
+int[] a = new int[length];
+\end{lstlisting}
 
-\title{Zusammenfassung Programmieren und Algorithmen}
-
-\author{Daniel Winz\\Ervin Mazlagi\'c}
-\date{\today~\dtc}
-
-
-\begin{document}
-
-\maketitle
-
-\include{about}
-
-\tableofcontents
-
-\newpage
-
-\input{types}       % Primitive Datentypen
-\input{ctrl}        % Kontrollstrukturen
-\input{array}       % Arrays
-
-\end{document}
-
+\subsection{Initialtisierung}
+\begin{lstlisting}[caption=Array Initialisierung einzeln]
+a[0] = 0; 
+a[1] = 1; 
+a[2] = 1; 
+a[3] = 2; 
+a[4] = 3; 
+...
+\end{lstlisting}
+\begin{lstlisting}[caption=Array Initialisierung mit Liste]
+array = {0, 1, 1, 2, 3, ...}
+\end{lstlisting}
+\begin{lstlisting}[caption=Array Initialisierung mit for Schleife]
+for(int i = 0; i < array.length; i++) {
+a[i] = 0;
+}
+\end{lstlisting}
