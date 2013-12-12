@@ -16,20 +16,24 @@
 
 \section{Kontrollstrukturen}
 
-\subsection{if Verzweigung}
+\subsection{if-else Verzweigung}
 \begin{lstlisting}[caption=if Verzweigung]
-if (condition == true) {
+if(condition == true) {
     /* Do anything */
+}
+else {
+    /* Do anything else */
 }
 \end{lstlisting}
 
 \subsection{switch-case Verzweigung}
 \begin{lstlisting}[caption=switch-case Verzweigung]
-switch (variable) {
+switch(variable) {
     case 0: 
         /* Do anything */
         break;
     case 1: 
+    case 2:
         /* Do anything */
         break;
     ...
@@ -41,7 +45,7 @@ switch (variable) {
 
 \subsection{while Schleife}
 \begin{lstlisting}[caption=while Schleife]
-while (condition == true) {
+while(condition == true) {
     /* Do anything */
 }
 \end{lstlisting}
@@ -50,8 +54,7 @@ while (condition == true) {
 \begin{lstlisting}[caption=do-while]
 do {
     /* Do anything */
-}
-while (condition == true);
+} while(condition == true);
 \end{lstlisting}
 
 \subsection{for Schleife}
@@ -63,7 +66,7 @@ for (int i; i < limit; i++) {
 
 \subsection{foreach Schleife}
 \begin{lstlisting}[caption=foreach Schleife]
-for(i:Obj) {
+for(intb i:collection) {
     /* Do anything */
 }
 \end{lstlisting}
