@@ -14,7 +14,9 @@
 %GNU General Public License for more details.
 %----------------------------------------
 
-\section{Themen Objektorientiertes Programmieren}
+\section{Themen}
+
+\subsection{Themen Objektorientiertes Programmieren}
 \begin{itemize}
     \item Klassen und Objekte
     \begin{itemize}
@@ -199,6 +201,143 @@
         \item Polymorphie
         \item Substitution
         \item Klasse Objekt
+    \end{itemize}
+\end{itemize}
+
+\subsection{Themen Algorithmen}
+\begin{itemize}
+    \item Begriffe
+    \begin{itemize}
+        \item Algrithmus
+        \begin{itemize}
+            \item schrittweises Verfahren
+            \item nächster Schritt definiert
+            \item endet nach endlicher Anzahl Schritte
+        \end{itemize}
+        \item Komplezität
+        \begin{itemize}
+            \item Zeit
+            \item Speicher
+        \end{itemize}
+        \item Ordnung
+    \end{itemize}
+    
+    \item Rekursion
+    \begin{itemize}
+        \item Rekursionsbasis
+        \item Rekursionsvorschrift
+        \item if - else
+        \item Speicherkomplexität (Stack)
+        \item Baumstruktur der Methodenaufrufe
+        \begin{itemize}
+            \item $\log_2(n)$
+        \end{itemize}
+    \end{itemize}
+    
+    \item Beispiele
+    \begin{itemize}
+        \item Ackermann
+        \item Türme von Hanoi
+        \item Rekursion als Ersatz für Schleifen
+        \item Fibonacci
+        \item Fakultät
+    \end{itemize}
+    
+    \item Backtracking
+    \begin{itemize}
+        \item Labyrinth
+        \item $O(k^n)$
+        \item Heuristik
+        \begin{itemize}
+            \item Weg des Springers
+        \end{itemize}
+        \item Schritt zurück
+    \end{itemize}
+    
+    \item Sortieren
+    \begin{itemize}
+        \item stabil / instabil
+        \item Schlüssel
+        \item intern / extern
+        
+        \item einfache / direkte Sortierverfahren
+        \begin{itemize}
+            \item $O(n^2)$
+            \item direktes Einfügen (insertion sort)
+            stabil
+            \item direktes Auswählen (selection sort)
+            instabil
+            \item direktes Austauschen (bubble sort)
+            stabil
+            \item Speicherkomplexität $O(1)$
+        \end{itemize}
+        
+        \item Shellsort
+        \begin{itemize}
+            \item $O(n^{1.2}$
+            \item basiert auf direktem Einfügen
+            \item von grob nach fein
+        \end{itemize}
+        
+        \item höhere Sortierverfahren
+        \begin{itemize}
+            \item $O(n \cdot \log(n))$
+            \item Quicksort
+            \begin{itemize}
+                \item trennen
+                \item medium-of-three Verfahren
+                \item quick-insertion-sort Optimierung
+                \item instabil
+                \item Speicherkomplexität $O(\log(n))$
+            \end{itemize}
+            \item Mergesort
+            \begin{itemize}
+                \item sukzessives Halbieren
+                \item mischen (Reissverschluss)
+                \item externes Sortieren
+                \item stabil
+                \item garentiert $O(n \cdot \log(n))$
+                \item zusätzlicher Speicher $O(n)$
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    
+    \item Suchen
+    \begin{itemize}
+        \item Symbol
+        \item einfache Suche
+        \begin{itemize}
+            \item $O(n \cdot m)$
+        \end{itemize}
+        \item endliche Automaten
+        \begin{itemize}
+            \item Wort bestandteil der Sprache
+            \item Zustandsautomaten
+            \item dedizierter Suchautomat
+            \item pro Ergebnis ein Zustandsübergang
+        \end{itemize}
+        \item Musterautomaten
+        \begin{itemize}
+            \item Ränder der Teilworte
+            \item pro Zeichen ev. mehrere Zustandsübergänge
+        \end{itemize}
+        \item KMP Algorithmus
+        \begin{itemize}
+            \item next Tabelle
+            \item $O(n + m)$
+        \end{itemize}
+        \item Quicksearch
+        \begin{itemize}
+            \item springen nicht kriechen
+            \item Shiftarray: pro Symbol
+            \item Durchschnitt: $O(m + \frac{n}{m})$
+        \end{itemize}
+        \item Optimal missmatch
+        \begin{itemize}
+            \item Quicksearch
+            \item forcierte Zeichenunstimmigkeit
+            \item $O(m + \frac{n}{m})$
+        \end{itemize}
     \end{itemize}
     
 \end{itemize}
