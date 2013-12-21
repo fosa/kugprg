@@ -246,7 +246,7 @@
     \item Backtracking
     \begin{itemize}
         \item Labyrinth
-        \item $O(k^n)$
+        \item $\BigO{k^n}$
         \item Heuristik
         \begin{itemize}
             \item Weg des Springers
@@ -262,7 +262,7 @@
         
         \item einfache / direkte Sortierverfahren
         \begin{itemize}
-            \item $O(n^2)$
+            \item $\BigO{n^2}$
             \item direktes Einfügen (insertion sort)
             stabil
             \item direktes Auswählen (selection sort)
@@ -274,21 +274,21 @@
         
         \item Shellsort
         \begin{itemize}
-            \item $O(n^{1.2}$
+            \item $\BigO{n^{1.2}}$
             \item basiert auf direktem Einfügen
             \item von grob nach fein
         \end{itemize}
         
         \item höhere Sortierverfahren
         \begin{itemize}
-            \item $O(n \cdot \log(n))$
+            \item $\BigO{n \cdot \log(n)}$
             \item Quicksort
             \begin{itemize}
                 \item trennen
                 \item medium-of-three Verfahren
                 \item quick-insertion-sort Optimierung
                 \item instabil
-                \item Speicherkomplexität $O(\log(n))$
+                \item Speicherkomplexität $\BigO{\log(n)}$
             \end{itemize}
             \item Mergesort
             \begin{itemize}
@@ -296,8 +296,8 @@
                 \item mischen (Reissverschluss)
                 \item externes Sortieren
                 \item stabil
-                \item garentiert $O(n \cdot \log(n))$
-                \item zusätzlicher Speicher $O(n)$
+                \item garentiert $\BigO{n \cdot \log(n)}$
+                \item zusätzlicher Speicher $\BigO{n}$
             \end{itemize}
         \end{itemize}
     \end{itemize}
@@ -307,7 +307,7 @@
         \item Symbol
         \item einfache Suche
         \begin{itemize}
-            \item $O(n \cdot m)$
+            \item $\BigO{n \cdot m}$
         \end{itemize}
         \item endliche Automaten
         \begin{itemize}
@@ -324,19 +324,19 @@
         \item KMP Algorithmus
         \begin{itemize}
             \item next Tabelle
-            \item $O(n + m)$
+            \item $\BigO{n + m}$
         \end{itemize}
         \item Quicksearch
         \begin{itemize}
             \item springen nicht kriechen
             \item Shiftarray: pro Symbol
-            \item Durchschnitt: $O(m + \frac{n}{m})$
+            \item Durchschnitt: $\BigO{m + \frac{n}{m}}$
         \end{itemize}
         \item Optimal missmatch
         \begin{itemize}
             \item Quicksearch
             \item forcierte Zeichenunstimmigkeit
-            \item $O(m + \frac{n}{m})$
+            \item $\BigO{m + \dfrac{n}{m}}$
         \end{itemize}
     \end{itemize}
     
