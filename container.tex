@@ -1,0 +1,105 @@
+% coding:utf-8
+
+%kugprg, a LaTeX-Code for a summary of programming modules
+%Copyright (C) 2013, Daniel Winz, Ervin Mazlagic
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+\newpage
+\section{Container}
+Container können nur Objekte enthalten und niemals primitive
+Datentypen (siehe Boxing und Autoboxing).
+
+\subsection{List<E>}
+
+\begin{itemize}
+	\item geordnet???
+	\item indexiert
+	\item zero-based (Index beginnt mit 0)
+	\item kann mehrfach das gleiche Objekt enthalten
+	\item Mehtoden
+		\begin{itemize}
+			\item \lstinline{add(E element)}
+			\item \lstinline{set(int index, E element)}
+			\item \lstinline{E get(int index)}
+		\end{itemize}
+	\item Iteratorenklassen
+		\begin{itemize}
+			\item \lstinline{Iterator<E>}
+			\item \lstinline{ListIterator<E>}
+		\end{itemize}
+\end{itemize}
+
+\subsection{Set<E>}
+
+\begin{itemize}
+	\item nicht indexiert
+	\item nicht geordnet
+	\item ein Set (zu Deutsch \textit{Menge}) kann keine zwei gleiche 
+		Objekte enthalten (wie eine Menge in der Mathematik)
+	\item Mehtoden
+		\begin{itemize}
+			\item \lstinline{add(E element)}
+			\item \lstinline{contains(Object o)}
+			\item \lstinline{boolean isEmpty()}
+			\item \lstinline{int size()}
+		\end{itemize}
+	\item Iteratoren
+		\begin{itemize}
+			\item \lstinline{Iterator<E>}
+		\end{itemize}
+\end{itemize}
+
+\subsection{Map<K, V>}
+
+\begin{itemize}
+	\item Verbindet einen Key mit einem Value (bildet also Paare)
+	\item jeder Key kommt nur einmal vor
+	\item ein Value kann mehreren Keys zugeordnet sein
+	\item drei Schichten:
+		\begin{itemize}
+			\item Set von Keys
+			\item Collection von Values
+			\item Set von Paaren (Key, Value)
+		\end{itemize}
+	\item Methoden
+		\begin{itemize}
+			\item \lstinline{put(K key, V vlaue)}
+			\item \lstinline{V get(Object key)}
+			\item \lstinline{Set<K> keySet()}
+			\item \lstinline{Collection<V> values()}
+		\end{itemize}
+	\item Iteratoren
+		\begin{itemize}
+			\item \lstinline{Set<Map.Entry<K,V>>} \\
+				d.h. man bildet aus jedem Key-Value
+				Paar ein Objekt und daraus dann ein Set
+				durch welches iteriert wird
+			\item alternativ Iteration über Collection der
+				Values möglich
+		\end{itemize}
+\end{itemize}
+
+\subsection{ArrayList<E>}
+Die \lstinline{ArrayLsit<E>} ist eine Implementierung von 
+\lstinline{List<E>} mit flexibler bzw. dynamischer Grösse.
+
+\begin{itemize}
+	\item \lstinline{size()}
+	\item \lstinline{isEmpty()}
+	\item \lstinline{get()}
+	\item \lstinline{set()}
+	\item \lstinline{iterator()}
+	\item \lstinline{listIterator()}
+\end{itemize}
+
+\lstinputlisting[title=ArrayList Beispiel]{arrayList.java}
