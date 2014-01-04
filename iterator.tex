@@ -1,0 +1,45 @@
+% coding:utf-8
+
+%kugprg, a LaTeX-Code for a summary of programming modules
+%Copyright (C) 2013, Daniel Winz, Ervin Mazlagic
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+\newpage
+\section{Iteratoren}
+
+\begin{itemize}
+	\item Iteratoren können genau einmal durch eine Collection
+		durchiterieren (Aushnahme \lstinline{ListIterator<E>}).
+	\item Jedes Element der iterierten Collection kann dabei genau
+		ein man erreicht und zurückgegeben werden
+		(Aushnahme \lstinline{ListIterator<E>}).
+	\item Es gibt zwei also zwei Arten von Iteratoren:
+		\begin{itemize}
+			\item \lstinline{Iterator<E>}
+				\begin{itemize}
+					\item \lstinline{boolean hasNext()} --- Gibt es weitere Elemente?
+					\item \lstinline{E next()} --- Gehe zum nächsten Element (und gib es zurück).
+					\item remove() --- Entferne das aktuelle Element.
+				\end{itemize}
+
+			\item \lstinline{ListIterator<E>}
+					\begin{itemize}
+					\item \lstinline{boolean hasNext()} --- Gibt es weitere Elemente?
+					\item \lstinline{E next()} --- Gehe zum nächsten Element (und gib es zurück).
+					\item \lstinline{remove()} --- Entferne das aktuelle Element.
+					\item \lstinline{boolean hasPrevious()} --- Gibt es ein Element vorher?
+					\item \lstinline{E previous()} --- Gehe zum vorherigen Element (und gib es zurück).
+				\end{itemize}
+
+		\end{itemize}
+\end{itemize}

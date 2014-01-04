@@ -14,4 +14,60 @@
 %GNU General Public License for more details.
 %----------------------------------------
 
-\srction{Sortieralgorithmen}
+\section{Sortieralgorithmen}
+
+\subsection{Einfache Sortieralgorithmen}
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{l l l l}
+                Name (en)
+			& Name (dt) 
+			& Typ
+			& $O$ \\
+                \hline
+                Insertion sort
+			& Direktes Einfügen
+			& stabil       
+			& $O(n^2)$ \\
+                Selection sort 
+			& Direktes Auswählen      
+			& instabil       
+			& $O(n^2)$ \\
+                Shellsort   
+			& Shellsort    
+			& instabil       
+			& $O(n^2)$ \\
+                Bubble sort   
+			& Direktes Austauschen   
+			& stabil        
+			& $O(n^2)$
+        \end{tabular}
+        \caption{Überischt einfache Sortieralgorithmen}
+        \label{table:sorting-algorithms}
+\end{table}
+
+\subsubsection{Insertion Sort (direktes Einfügen)}
+Eselsbrücke: \emph{Von unten auffüllen mittels paarweisen Vergleichen 
+und paarweisem Tauschen nach unten}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l l l}
+		Bester Fall
+			& bereits sortiert
+			& $O(n)$ \\
+		Durchschnittlicher Fall	
+			& -- 
+			& $O(n^2)$ \\
+		Schlechtester Fall	
+			& ungekehrt sortiert
+			& $O(n^2)$ \\
+	\end{tabular}
+\end{table}
+
+\lstinputlisting[title=Basic Insertion Sort]{insertionSort.java}
+\lstinputlisting[title=Improved Insertion Sort]{insertionSort2.java}
+
+\subsubsection{Selection Sort (direktes Auswählen)}
+Eselsbrücke:
