@@ -51,8 +51,23 @@
 Eselsbrücke: \emph{Von unten auffüllen mittels paarweisen Vergleichen 
 und paarweisem Tauschen nach unten}.
 
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l l l}
+		Bester Fall
+			& bereits sortiert
+			& $O(n)$ \\
+		Durchschnittlicher Fall	
+			& -- 
+			& $O(n^2)$ \\
+		Schlechtester Fall	
+			& ungekehrt sortiert
+			& $O(n^2)$ \\
+	\end{tabular}
+\end{table}
+
 \lstinputlisting[title=Basic Insertion Sort]{insertionSort.java}
 \lstinputlisting[title=Improved Insertion Sort]{insertionSort2.java}
 
 \subsubsection{Selection Sort (direktes Auswählen)}
-Eselsbrücke: \emph{}
+Eselsbrücke:
