@@ -1,0 +1,90 @@
+% coding:utf-8
+
+%kugprg, a LaTeX-Code for a summary of programming modules
+%Copyright (C) 2013, Daniel Winz, Ervin Mazlagic
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+
+\newpage
+\section{Zugriffsmodifizierer}
+
+% http://stackoverflow.com/questions/215497/in-java-whats-the-difference-between-public-default-protected-and-private
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l c c c c}
+			& Class
+			& Package
+			& Subclass
+			& World \\
+		& & & & \\
+		private
+			& \ding{51}
+			& \ding{56} 
+			& \ding{56}
+			& \ding{56} \\
+		& & & &  \\
+		default
+			& \ding{51}
+			& \ding{51}
+			& \ding{56}
+			& \ding{56} \\
+		& & & & \\
+		protected
+			& \ding{51}
+			& \ding{51}
+			& \ding{51}
+			& \ding{56} \\
+		& & & & \\
+		public
+			& \ding{51}
+			& \ding{51}
+			& \ding{51}
+			& \ding{51}
+	\end{tabular}
+\end{table}
+
+\begin{itemize}
+	\item \lstinline{public}
+		\begin{itemize}
+			\item sichtbar innerhalb der eigenen Klasse
+			\item sichtbar in Methoden abgeleiteter Klassen
+			\item sichtbar für Benutzer der Instanzen
+			\item bilden das Interface einer Klasse
+		\end{itemize}
+	\item \lstinline{private}
+		\begin{itemize}
+			\item sichtbat innerhalb der eigenen Klasse
+			\item nicht sichtbar für abgeleitete Klassen
+			\item nicht sichtbar für Benutzer der Instanzen
+			\item Grundlage für \textit{Information Hiding}
+		\end{itemize}
+	\item \lstinline{protected}
+		\begin{itemize}
+			\item sichtbar innerhalb der eigenen Klasse
+			\item sichtbar in Methoden abgeleiteter Klassen
+			\item sichtbar in Klassen des selben 
+				\lstinline{package}
+			\item vor Zugriffen von aussen geschützt ???
+		\end{itemize}
+	\item \lstinline{defualt}
+		\begin{itemize}
+			\item sichtbar innerhalb der eigenen Klasse
+			\item sichtbar innerhalb des selben 
+				\lstinline{package}
+		\end{itemize}
+\end{itemize}
+
+\noindent
+
+
+
