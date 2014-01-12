@@ -14,8 +14,45 @@
 %GNU General Public License for more details.
 %----------------------------------------
 
-
+\newpage
 \section{Algorithmus}
 
 \subsection{Definition}
 Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. (Wikipedia)
+
+\subsection{Wichtige Algorithmen aus PRG1}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{llll}
+		\textbf{Name} 
+			& \textbf{Merkspruch} 
+			& \textbf{Typ} 
+			& \textbf{Big-O} \\
+		\hline
+		Insertion Sort
+			& \textit{auffüllen nach unten}
+			& Stabil
+			& $O(n^2)$ \\
+		Selection Sort
+			& \textit{kleinstes suchen und tauschen}
+			& Instabil
+			& $O(n^2)$ \\
+		Bubble Sort
+			& \textit{tausche höheres nach oben}
+			& Stabil
+			& $O(n^2)$ \\
+		Shell Sort
+			& \textit{Insertion Sort mit Raster}
+			& Instabil
+			& $O(n^2)$ \\
+		Quicksort
+			& \textit{teile mit Trennelement}
+			& Instabil
+			& ?? \\
+		Mergesort
+			& \textit{zerlege alles, dann mergen}
+			& Stabil
+			& ??
+	\end{tabular}
+\end{table}
